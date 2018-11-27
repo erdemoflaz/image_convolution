@@ -7,7 +7,7 @@ input_pixels = input_image.load()
 # renk yogunlugu bul
 intensity = [[sum(input_pixels[x, y]) / 3 for y in range(input_image.height)] for x in range(input_image.width)]
 
-kernelx = [[1, 0, -1],
+kernelx = [[-1, 0, 1],
            [2, 0, -2],
            [1, 0, -1]]
 kernely = [[1, 2, 1],
